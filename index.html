@@ -30,6 +30,11 @@
                     <a id="logo" href="index.html" className="nav-link active"> 
                         <strong>MoN </strong>
                     </a>
+                    <div id="Audio">
+                        <audio controls autoPlay loop id="myMp3" >
+                            <source src="assets/nhac.mp3" type="audio/mpeg"></source>
+                        </audio>
+                    </div>
                     <button onClick={()=>{this.props.handleClickFunc();}} id="nav_button" className="btn btn-light"> 
                         START
                     </button>
@@ -149,6 +154,7 @@
     }        
         
     ReactDOM.render(<App/>,document.getElementById('app'));
+    document.getElementById("myMp3").volume=0.2;
     </script>
     
 </body>
