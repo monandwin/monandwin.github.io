@@ -10,11 +10,7 @@
     text-align: center;
     text-justify: center;
 }
-#Audio{
-    grid-column: 2/3;
-    display:none;
-    
-}
+
 #nav_button{
     grid-column: 3/4;
 }

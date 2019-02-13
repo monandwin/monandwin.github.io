@@ -3,9 +3,9 @@
 </style>
 <html lang="en">
 <head>
-    <title> My Page</title>
+    <title> For Mon</title>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="1000" >
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,7 +18,7 @@
 </head>
 <body data-gr-c-s-loaded="true" >
     <div id="app"></div>
-    
+    <iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117933783&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
     <script type="text/babel">
         class Navbar extends React.Component{
             handleClick=()=>{
@@ -30,11 +30,6 @@
                     <a id="logo" href="index.html" className="nav-link active"> 
                         <strong>MoN </strong>
                     </a>
-                    <div id="Audio">
-                        <audio controls autoPlay loop id="myMp3" >
-                            <source src="assets/nhac.mp3" type="audio/mpeg"></source>
-                        </audio>
-                    </div>
                     <button onClick={()=>{this.props.handleClickFunc();}} id="nav_button" className="btn btn-light"> 
                         START
                     </button>
@@ -154,7 +149,7 @@
     }        
         
     ReactDOM.render(<App/>,document.getElementById('app'));
-    document.getElementById("myMp3").volume=0.2;
+    
     </script>
     
 </body>
