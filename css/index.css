@@ -1,0 +1,46 @@
+#Navbar{
+    display : grid;
+    grid-template-columns: minmax(200px,40%) 1fr 1fr;
+    z-index: 10;
+}
+#logo{
+    grid-column: 1/2;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    text-justify: center;
+}
+#nav_button{
+    grid-column: 3/4;
+}
+img{
+    position: fixed;  
+}
+
+#Image{
+    display: none;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 50px;
+    z-index: 30;
+    background: #fafff9;
+    opacity: 0.8;
+}
+
+#MainImage{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    position: relative;
+    align-self: center;
+    opacity: 10;
+}
+
+#State{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
